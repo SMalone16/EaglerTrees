@@ -1,0 +1,35 @@
+enabled: true
+
+# Only axes trigger the tree-felling mechanic. Other tools keep vanilla block breaking.
+require-axe: true
+
+# Natural-tree checks help avoid rotating log cabins or student builds.
+min-tree-logs: 4
+max-tree-logs: 256
+max-horizontal-radius: 10
+max-vertical-span: 48
+min-nearby-leaves: 4
+leaf-search-radius: 3
+max-leaves-removed: 1400
+
+# The first strike on a natural tree owns the notch until it falls or expires.
+notch-timeout-seconds: 90
+send-notch-message: true
+
+# Visual/audio feedback. Real blocks are used for the final fall for Eaglercraft/Via compatibility.
+fall-delay-ticks: 12
+play-feedback: true
+remove-leaves-at-start: true
+
+# Keep a one-block-high stump (or the entire lowest layer on a 2x2 trunk).
+leave-stump: true
+
+# Preserve the fallen tree's rotated shape without overwriting buildings/terrain.
+protect-solid-obstacles: true
+max-obstacle-lift: 8
+
+# Branches that rotate underneath the main trunk/onto the landing plane become planks.
+convert-ground-branches-to-planks: true
+
+# If a branch still intersects a protected solid block, look upward for the nearest safe place.
+branch-placement-search-height: 4
