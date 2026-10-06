@@ -1,0 +1,16 @@
+name: EaglerTrees
+version: '1.0.0'
+main: org.pawling.eaglertrees.EaglerTreesPlugin
+api-version: '1.21.11'
+author: Pawling CSD Game Development
+description: Directional tree felling where the first axe strike sets the notch and fall direction.
+
+commands:
+  eaglertrees:
+    description: EaglerTrees status and teacher administration
+    usage: /eaglertrees <status|reload>
+
+permissions:
+  eaglertrees.admin:
+    description: Allows EaglerTrees configuration reload
+    default: op
